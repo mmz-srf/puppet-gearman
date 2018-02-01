@@ -118,5 +118,6 @@ class gearman(
     hasstatus  => $service_hasstatus,
     hasrestart => $service_hasrestart,
     require    => File[$config_file],
+    provider   => 'systemd',
   }
 }
